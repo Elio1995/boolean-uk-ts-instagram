@@ -7,8 +7,7 @@ export default function CreatePostSection() {
 
   const handleCreateNewPostSubmit = (e: any) => {
     e.preventDefault();
-    if (!selectedUserId)
-      return alert("Please select user before make a new post~~~");
+    if (!selectedUserId) return;
     let newPost = {
       title: e.target.title.value,
       content: e.target.content.value,
